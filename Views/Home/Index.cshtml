@@ -1,0 +1,17 @@
+﻿@using Stimulsoft.Report.Mvc
+@{
+    Layout = "_Layout";
+}
+
+@Html.StiNetCoreDesigner(new StiNetCoreDesignerOptions()
+{
+
+    Actions =
+    {
+        GetReport = "GetReport",
+        CreateReport = "CreateReport",
+        DesignerEvent = "DesignerEvent",
+        SaveReport = "SaveReport"
+    }
+})
+
